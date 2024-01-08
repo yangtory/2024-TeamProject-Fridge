@@ -43,14 +43,19 @@ div.main header i:hover {
 div.main {
   height: 100%;
 }
-div.main section div.line li {
+div.main section li {
   color: white;
   padding: 30px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   position: relative;
   top : 50px;
+  margin-top: 20px;
+  cursor: pointer;
   
+}
+div.main section li:hover {
+  color: #4e4e4e;
 }
 div.main section.div {
   width: 90%;
@@ -60,6 +65,7 @@ div.main section.div {
   background-color: #a7cba2;
   border-radius: 10px;
 }
+
 
 
 
@@ -91,6 +97,7 @@ div li.house {
   bottom: 40px;
 }
 
+
 div li {
   font-size: 1.8rem;
   color: #4e4e4e;
@@ -100,9 +107,12 @@ div.control ul li {
   cursor: pointer;
 }
 
-div.control ul li:nth-of-type(3) {
-  color : rgb(219, 219, 170);
+div.control ul a:nth-of-type(3) li{
+  
+  color:rgb(196, 196, 99);
+  
 }
+
 div.control ul li i:hover {
   color: #858585;
   
