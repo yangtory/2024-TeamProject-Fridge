@@ -8,10 +8,15 @@ html {
 }
 body {
   height: 100%;
-  background-color: #e7e5e5;
+  
 }
 li {
   list-style: none;
+}
+div.main {
+  background-color: #e7e5e5;
+  border-radius: 20px;
+  height: 100%;
 }
 div.main header {
   display: flex;
@@ -27,9 +32,13 @@ div.main header p {
   font-size: 1.2rem;
 }
 div.main header i {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   margin: 10px 15px;
   color: #4e4e4e;
+  cursor: pointer;
+}
+div.main header i:hover {
+  color: #858585;
 }
 div.main {
   height: 100%;
@@ -38,29 +47,29 @@ div.main section.div {
   width: 90%;
   margin: 40px auto;
   /* border: 1px solid black; */
-  height: 70%;
+  height: 80%;
   background-color: #a7cba2;
   border-radius: 10px;
 }
 
-div.main section div.line div {
+div.main section div.line ul {
   color: white;
-  padding: 20px;
+  padding: 30px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
-
-  position: relative;
-  top: 30px;
+  
 }
 
 div.main section div {
   color: red;
 }
 div.control {
-  font-size: 30px;
-  background-color: #f4f4f4;
-  border-radius: 10px;
   height: 10%;
+  
+  background-color: #f4f4f4;
+  border-bottom: 20px;
+  /* border : 1px solid black; */
+  
 }
 
 div.control ul {
@@ -70,12 +79,24 @@ div.control ul {
   align-items: center;
 }
 div li.add {
-  font-size: 65px;
-  margin-bottom: 3.5rem;
+  font-size: 4rem;
+  margin-bottom: 5rem;
   color: #a7cba2;
 }
 
 div li {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #4e4e4e;
+}
+div.control ul li {
+  
+  cursor: pointer;
+}
+
+div.control ul li:nth-of-type(3) {
+  color : rgb(219, 219, 170);
+}
+div.control ul li i:hover {
+  color: #858585;
+  
 }
