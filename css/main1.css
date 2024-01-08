@@ -43,6 +43,46 @@ div.body {
   justify-content: center;
 }
 
+div.body section.menu {
+  width: 90%;
+  height: 90%;
+  background-color: #a7cba2;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.body section button {
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: #4e4e4e;
+  cursor: pointer;
+  border: 3px solid;
+  border-radius: 10px;
+  padding: 1em 2em;
+  margin: 1rem;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+}
+
+button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+button:hover {
+  background-color: #fff;
+}
+
+button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
 div.control {
   font-size: 30px;
   background-color: #f4f4f4;
@@ -58,8 +98,8 @@ div.control ul {
 }
 
 div li.add {
-  font-size: 65px;
-  margin-bottom: 3.5rem;
+  font-size: 55px;
+  margin-bottom: 5rem;
   color: #a7cba2;
 }
 
