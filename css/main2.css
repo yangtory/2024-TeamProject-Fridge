@@ -15,15 +15,14 @@ li {
 }
 
 div.main {
-  height: 800px;
-  width: 393px;
+  height: 100%;
   background-color: #e7e5e5;
   border-radius: 15px;
 }
 
 div.main header {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 }
 
 div.main header i {
@@ -50,9 +49,32 @@ div.body section {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
+  align-items: center;
+  justify-content: start;
 }
+div.body section h1 {
+  font-size: 2rem;
+  margin: 15px;
+}
+
+div.photo {
+  background-color: #e7e5e5;
+  border-radius: 10px;
+  height: 40%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.body section p {
+  font-size: 1rem;
+  color: #858585;
+  padding: 12px;
+  border: 2px solid #858585;
+  border-radius: 10px;
+}
+
 
 /* div.body section button {
   font-size: 20px;
@@ -99,7 +121,7 @@ div.control ul {
 
 div li.add {
   font-size: 55px;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   color: #a7cba2;
 }
 
