@@ -12,7 +12,6 @@ div.setting {
   justify-content: end;
 }
 body {
-  width: 393px;
   font-family: Verdana, sans-serif;
   display: flex;
   flex-direction: column;
@@ -54,7 +53,6 @@ body > div > div {
 
 .weekdays {
   display: flex;
-  width: 393px;
   justify-content: space-between;
   margin: 0;
   padding: 14px 0;
@@ -79,7 +77,7 @@ body > div > div {
 .days li {
   list-style-type: none;
   display: inline-block;
-  width: 12.8%;
+  width: 14%;
   text-align: center;
   margin-bottom: 40px;
   font-size: 12px;
