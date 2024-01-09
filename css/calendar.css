@@ -54,6 +54,9 @@ body > div > div {
   width: 100%;
   background: #a7cba2;
   text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 
 .month ul {
