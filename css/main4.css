@@ -8,7 +8,6 @@ a {
     color: inherit;
     white-space: nowrap;
 }
-
 html {
     height: 100vh;
 }
@@ -58,6 +57,64 @@ div.body section {
     display: flex;
     flex-direction: column;
 }
+div.body section h1 {
+    font-size: 2rem;
+    margin: 15px;
+    text-align: center;
+}
+
+section div.photo {
+    border: 1px solid black;
+    background-color: #e7e5e5;
+    border-radius: 10px;
+    height: 300px;
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4e4e4e;
+}
+
+section p {
+    font-size: 1rem;
+    color: #422800;
+    padding: 12px;
+    border: 2px solid #858585;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+section p:hover {
+    background-color: #f4f4f4;
+}
+div.input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: auto;
+}
+
+section input {
+    border: none;
+    font-size: 1.1rem;
+    background-color: #e7e5e5;
+    border-radius: 10px;
+    width: 80%;
+    padding: 15px;
+    margin: 15px;
+}
+
+input:focus {
+    background-color: #f4f4f4;
+    outline: none;
+}
+
+input:hover {
+    background-color: #f4f4f4;
+}
 
 section button {
     font-size: 12px;
@@ -67,7 +124,7 @@ section button {
     border: 2px solid;
     border-radius: 10px;
     padding: 1em 2em;
-    margin-left: 0.8rem;
+    margin: 1rem;
     box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
 }
 
@@ -108,24 +165,13 @@ div li {
 div li:hover {
     color: #858585;
 }
-.btn {
-    display: flex;
-}
 
 section ul li {
     color: #4e4e4e;
-    font-size: 6rem;
-    /* margin: 20px 40px; */
-    /* width: 20%; */
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center */
+    font-size: 8rem;
+    margin: 20px 40px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-ul li i {
-    margin: 1rem 1rem 0 1rem;
-}
-
-/* .btn {
-    border: 1px solid black;
-} */

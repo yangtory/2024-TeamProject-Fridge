@@ -58,9 +58,25 @@ div.body section {
   justify-content: center;
 }
 
+label {
+  cursor: pointer;
+}
+
+section button {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #4e4e4e;
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 1em 2em;
+  margin: 1rem;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+}
+
 button:active {
-  top: 5px;
-  left: 5px;
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(1px, 1px);
 }
 
 button:hover {
