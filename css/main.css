@@ -3,6 +3,13 @@
   margin: 0;
   padding: 0;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  white-space: nowrap;
+}
+
 html {
   height: 100vh;
 }
@@ -15,8 +22,7 @@ li {
 }
 
 div.main {
-  height: 800px;
-  width: 393px;
+  height: 100%;
   background-color: #e7e5e5;
   border-radius: 15px;
 }
@@ -25,10 +31,15 @@ div.main header {
   display: flex;
   justify-content: end;
 }
+
 div.main header i {
   font-size: 1.2rem;
   margin: 10px 15px;
   color: #4e4e4e;
+}
+
+div.main header i:hover {
+  color: #858585;
 }
 
 div.body {
@@ -52,6 +63,7 @@ div.control ul {
   justify-content: space-around;
   align-items: center;
 }
+
 div li.add {
   font-size: 65px;
   margin-bottom: 3.5rem;
@@ -61,4 +73,8 @@ div li.add {
 div li {
   font-size: 1.5rem;
   color: #4e4e4e;
+}
+
+div li:hover {
+  color: #858585;
 }
