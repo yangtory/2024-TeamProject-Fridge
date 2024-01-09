@@ -47,7 +47,7 @@ div.body {
   justify-content: center;
 }
 
-div.body section.menu {
+div.body section {
   width: 90%;
   height: 90%;
   background-color: #a7cba2;
@@ -56,19 +56,6 @@ div.body section.menu {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-div.body section button {
-  font-size: 20px;
-  text-decoration: none;
-  color: #4e4e4e;
-  cursor: pointer;
-  border: 3px solid;
-  border-radius: 10px;
-  padding: 1.5rem 3rem;
-  margin: 1rem;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-  position: relative;
 }
 
 button:active {

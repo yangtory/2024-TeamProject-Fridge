@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+html {
+  height: 100vh;
+}
+body {
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+div.main {
+  /* height: 800px;
+  width: 393px; */
+  height: 100%; /**/
+  background-color: #e7e5e5;
+  border-radius: 15px;
+}
+
+div.main header {
+  display: flex;
+  justify-content: end;
+}
+
+div.main header i {
+  font-size: 1.2rem;
+  margin: 10px 15px;
+  color: #4e4e4e;
+}
+
+div.main header i:hover {
+  color: #858585;
+}
+
+div.body {
+  height: 90%;
+  white-space: nowrap;
+  text-align: center;
+  justify-content: center;
+
+  background-color: #f4f4f4;
+  height: 90%;
+  border-radius: 30px;
+  margin: 5px 15px;
+  margin-bottom: 30px;
+  padding: 10px;
+
+  font-size: 20px;
+}
+div.body p {
+  margin: 10px;
+}
+div.body .input {
+  display: flex;
+}
+
+div.body div {
+  /* border: 1px solid red; */
+  margin: 10px;
+}
+
+div.body section div.name {
+  width: 65%;
+}
+div.body section div.amount {
+  width: 20%;
+}
+
+div.body section div.amount button {
+  border: none;
+  padding: 0 4px;
+  border-radius: 50%;
+  background-color: #a7cba2;
+  color: #f4f4f4;
+}
+div.body section div.amount button:hover {
+  background-color: #858585;
+}
+
+div.body input {
+  font-size: 15px;
+  width: 100%;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid #4e4e4e;
+  padding: 3px;
+}
+
+div.body input.amount {
+  width: 50%;
+}
+
+button.addmemo {
+  font-size: 15px;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #a7cba2;
+  color: #f4f4f4;
+}
+
+button {
+  cursor: pointer;
+}
+button:hover {
+  background-color: #858585;
+}
+
+section.list {
+  flex: 1;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin-top: 20px;
+}
+section.list ul {
+  list-style: none;
+}
+section.list li {
+  cursor: pointer;
+  font-size: 1.2rem;
+
+  /* 브라우저 호환성을 위한 설정 */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  padding: 0.9rem;
+
+  transition: 1.3s;
+
+  display: flex;
+}
+
+section.list li:hover {
+  background-color: #ddd;
+}
+
+section.list li.complete {
+  background-color: #ccc;
+}
+
+section.list li.complete span.todo {
+  text-decoration: line-through;
+  color: #ddd;
+}
+
+/* li tag 에 컴플리트 클래스가 없으면 스팬.컴플리트에 속성 적용하기 */
+section.list li:not(.complete) span.complete {
+  visibility: hidden;
+}
+
+span.complete {
+  padding: 5px;
+  margin: 0 5px;
+  color: red;
+}
+
+span.todo {
+  flex: 1;
+}
+span.close {
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 0 5px;
+}
+span.close:hover {
+  color: red;
+}
+
+div.control {
+  font-size: 30px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  height: 10%;
+}
+
+div.control ul {
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+div.control li.add {
+  font-size: 65px;
+  margin-bottom: 3.5rem;
+  color: #a7cba2;
+}
+
+div.control li:hover {
+  color: #858585;
+}
+div.control li.add:hover {
+  color: #858585;
+}
+
+div.control li {
+  font-size: 1.5rem;
+  color: #4e4e4e;
+}
