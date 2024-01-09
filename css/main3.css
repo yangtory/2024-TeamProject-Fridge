@@ -27,7 +27,7 @@ div.main {
 
 div.main header {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 }
 
 div.main header i {
@@ -37,6 +37,7 @@ div.main header i {
 }
 div.main header i:hover {
   color: #858585;
+  cursor: pointer;
 }
 
 div.body {
@@ -45,39 +46,95 @@ div.body {
   display: flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
 }
 
-div.body section.menu {
+div.body section {
   width: 90%;
   height: 90%;
   background-color: #a7cba2;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+}
+div.body section h1 {
+  font-size: 2rem;
+  margin: 15px;
+  text-align: center;
 }
 
-div.body section button {
-  font-size: 20px;
+section div.photo {
+  border: 1px solid black;
+  background-color: #e7e5e5;
+  border-radius: 10px;
+  height: 300px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4e4e4e;
+}
+
+section p {
+  font-size: 1rem;
+  color: #422800;
+  padding: 12px;
+  border: 2px solid #858585;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+section p:hover {
+  background-color: #f4f4f4;
+}
+div.input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin: auto;
+}
+
+section input {
+  border: none;
+  font-size: 1.1rem;
+  background-color: #e7e5e5;
+  border-radius: 10px;
+  width: 80%;
+  padding: 15px;
+  margin: 15px;
+}
+
+input:focus {
+  background-color: #f4f4f4;
+  outline: none;
+}
+
+input:hover {
+  background-color: #f4f4f4;
+}
+
+section button {
+  font-size: 12px;
   text-decoration: none;
   color: #4e4e4e;
   cursor: pointer;
-  border: 3px solid;
+  border: 2px solid;
   border-radius: 10px;
-  padding: 1.5rem 3rem;
+  padding: 1em 2em;
   margin: 1rem;
   box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-  position: relative;
-}
-
-button:active {
-  top: 5px;
-  left: 5px;
 }
 
 button:hover {
   background-color: #fff;
+}
+
+button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(1px, 1px);
 }
 
 div.control {
@@ -107,4 +164,14 @@ div li {
 
 div li:hover {
   color: #858585;
+}
+
+section ul li {
+  color: #4e4e4e;
+  font-size: 8rem;
+  margin: 20px 40px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
