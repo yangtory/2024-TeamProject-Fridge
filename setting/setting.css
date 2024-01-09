@@ -1,0 +1,20 @@
+section {
+  display: block;
+  height: 90%;
+  width: 90%;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+div.body ul {
+  padding: 10% 10%;
+}
+
+div.body li {
+  margin: 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #4e4e4e;
+}
+
+div li:hover {
+  color: #858585;
+}
