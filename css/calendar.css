@@ -9,6 +9,7 @@ html {
 body {
   height: 100%;
   display: flex;
+  flex-direction: column;
 }
 
 li {
@@ -39,8 +40,8 @@ div.main header i:hover {
   color: #858585;
 }
 section {
-  height: 100%;
   flex: 1;
+  flex-wrap: wrap;
 }
 
 body > div > div {
@@ -73,7 +74,7 @@ body > div > div {
   cursor: pointer;
 }
 .month .prev:hover {
-  opacity: 0.6;
+  color: #858585;
 }
 .month .next {
   float: right;
@@ -81,7 +82,7 @@ body > div > div {
   cursor: pointer;
 }
 .month .next:hover {
-  opacity: 0.6;
+  color: #858585;
 }
 
 .weekdays {
@@ -90,47 +91,58 @@ body > div > div {
   margin: 0;
   padding: 14px 0;
   background-color: #ddd;
+  flex-wrap: wrap;
 }
 
 .weekdays li {
   flex: 1;
+  flex-shrink: 2;
   color: #4e4e4e;
   text-align: center;
-}
-
-.days {
-  padding: 10px 0;
-  background: #ddd;
-  margin: 0;
+  border-left: 1px solid #f4f4f4;
 }
 .days_div {
   flex: 1;
   margin-top: 2rem;
   display: flex;
 }
+
 .days {
+  padding: 10px 0;
+  background: #ddd;
+  margin: 0;
+  color: #777;
   display: flex;
   flex: 1;
   flex-wrap: wrap;
 }
+
 .days li {
+  display: block;
   list-style-type: none;
-  width: 12.4%;
+  width: 14.2%;
   text-align: center;
   margin-bottom: 40px;
   font-size: 12px;
   color: #777;
+  border-left: 1px solid #f4f4f4;
 }
 
 div.control {
   font-size: 30px;
   background-color: #f4f4f4;
   border-radius: 10px;
-  height: 10%;
 }
+
 div.control li:hover {
   cursor: pointer;
-  opacity: 0.6;
+  color: #858585;
+}
+div.control {
+  font-size: 30px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  height: 10%;
 }
 
 div.control ul {
@@ -138,4 +150,10 @@ div.control ul {
   height: 100%;
   justify-content: space-around;
   align-items: center;
+}
+
+div li.home {
+  font-size: 55px;
+  margin-bottom: 4rem;
+  color: #a7cba2;
 }
