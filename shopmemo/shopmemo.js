@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
       //스팬 태그에 클로즈 클래스가 부착된 친구인가?
       if (target.className === "close") {
         //삭제할지 물어보기
-        if (confirm("TODO를 삭제할까요?")) {
+        if (confirm("목록을 삭제할까요?")) {
           //삭제를 허락하면 현재 스팬의 부모인 li 태그를 감추기
           target.closest("LI").style.display = "none";
         }
@@ -59,9 +59,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const adBtn = document.querySelector("button.addmemo");
   adBtn.addEventListener("click", () => {
     const todo = todoinput.value + todoinput2.value + "개";
-    if (!todo) {
-      alert("TODO내용을 입력해주세요");
+    if (!todoinput.value) {
+      alert("살 것을 입력해주세요");
       todoinput.select();
+      return false;
+    }
+    if (!todoinput2.value) {
+      alert("수량을 입력해주세요");
+      todoinput2.select();
       return false;
     }
     //list(배열)의 끝에 새로운 값을 추가하기
