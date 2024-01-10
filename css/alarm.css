@@ -3,38 +3,38 @@
   margin: 0;
   padding: 0;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  white-space: nowrap;
+}
+
 html {
   height: 100vh;
 }
+
 body {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  height: 95%;
 }
+
 li {
   list-style: none;
 }
+
 div.main {
-  flex: 1;
   background-color: #e7e5e5;
-  border-radius: 20px;
+  border-radius: 15px;
   height: 100%;
 }
+
 div.main header {
   display: flex;
+  justify-content: end;
 }
-div.main header p {
-  /* border: 1px solid black; */
 
-  flex: 1;
-  text-align: center;
-  color: #4e4e4e;
-  margin-top: 20px;
-  margin-left: 40px;
-  font-size: 1.2rem;
-}
 div.main header i {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 10px 15px;
   color: #4e4e4e;
   cursor: pointer;
@@ -58,20 +58,33 @@ div.main section li {
 span.date {
   flex: 1;
 }
-div.main section li:hover {
+div.body {
+  height: 90%;
   color: #4e4e4e;
-  background-color: #b6b3b3;
-  transition: 0.8s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.main section.div p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 10px;
 }
 div.main section.div {
   width: 90%;
   margin: 40px auto;
-  /* border: 1px solid black; */
-  height: 70%;
+  height: 90%;
   background-color: #a7cba2;
-  border-radius: 10px;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
+}
+
+div.main section li:hover {
+  color: #4e4e4e;
+  background-color: #b6b3b3;
+  transition: 0.8s;
 }
 div.main div.line li {
   flex: 1;
@@ -91,37 +104,27 @@ div.control {
   font-size: 30px;
   background-color: #f4f4f4;
   border-radius: 10px;
-  position: absolute;
-  width: 100%;
-  bottom: 0px;
-  /* height: 10%; */
+  height: 10%;
 }
 
 div.control ul {
+  height: 100%;
   display: flex;
-
   justify-content: space-around;
   align-items: center;
 }
-div li.house {
-  font-size: 4rem;
-  position: relative;
 
+div li.home {
+  font-size: 65px;
+  margin-bottom: 3.5rem;
   color: #a7cba2;
-  bottom: 40px;
 }
 
 div li {
-  font-size: 1.8rem;
-}
-div.control ul li a i {
-  color: #a7cba2;
-  cursor: pointer;
-}
-div.control li:nth-of-type(3) i {
-  color: rgb(226, 226, 149);
+  font-size: 1.5rem;
+  color: #4e4e4e;
 }
 
-div.control ul li i:hover {
+div li:hover {
   color: #858585;
 }

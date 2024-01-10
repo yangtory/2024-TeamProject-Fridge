@@ -6,12 +6,15 @@
 a {
   text-decoration: none;
   color: inherit;
+  white-space: nowrap;
 }
 html {
   height: 100vh;
 }
 body {
-  height: 100%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
 }
 
 li {
@@ -19,16 +22,14 @@ li {
 }
 
 div.main {
-  /* height: 800px;
-  width: 393px; */
-  height: 100%; /**/
+  height: 100%;
   background-color: #e7e5e5;
   border-radius: 15px;
 }
 
 div.main header {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 }
 
 div.main header i {
@@ -39,22 +40,39 @@ div.main header i {
 
 div.main header i:hover {
   color: #858585;
+  cursor: pointer;
 }
 
 div.body {
   height: 90%;
-  white-space: nowrap;
+  color: #4e4e4e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* white-space: nowrap;
   text-align: center;
   justify-content: center;
 
   background-color: #f4f4f4;
-  height: 90%;
-  border-radius: 30px;
+  border-radius: 15px;
   margin: 5px 15px;
   margin-bottom: 30px;
   padding: 10px;
 
   font-size: 20px;
+  border: 1px solid black; */
+}
+
+section.box {
+  width: 90%;
+  height: 90%;
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
 div.body p {
   margin: 10px;
@@ -69,7 +87,7 @@ div.body div {
 }
 
 div.body section div.name {
-  width: 65%;
+  width: 70%;
 }
 div.body section div.amount {
   width: 20%;
@@ -116,7 +134,8 @@ button:hover {
 }
 
 section.list {
-  flex: 1;
+  width: 80%;
+  /* flex: 1; */
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   margin-top: 20px;
@@ -141,10 +160,12 @@ section.list li {
 
 section.list li:hover {
   background-color: #ddd;
+  border-radius: 15px;
 }
 
 section.list li.complete {
   background-color: #ccc;
+  border-radius: 15px;
 }
 
 section.list li.complete span.todo {
@@ -190,9 +211,9 @@ div.control ul {
   cursor: pointer;
 }
 
-div.control li.add {
-  font-size: 65px;
-  margin-bottom: 3.5rem;
+div.control li.home {
+  font-size: 55px;
+  margin-bottom: 4rem;
   color: #a7cba2;
 }
 

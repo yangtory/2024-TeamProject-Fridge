@@ -4,8 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://kit.fontawesome.com/670098288e.js" crossorigin="anonymous"></script>
-        <title>Document</title>
-        <link rel="stylesheet" href="./css/main2.css" />
+        <script src="./js/shopmemo.js"></script>
+
+        <title>장보기추가</title>
+        <link rel="stylesheet" href="./css/shopmemo.css" />
     </head>
     <body>
         <div class="main">
@@ -14,22 +16,26 @@
                 <a href="./setting/setting.html"><i class="fa-solid fa-gear"></i></a>
             </header>
             <div class="body">
-                <section>
-                    <h1>냉장고 추가</h1>
-                    <div class="photo"><p class="inputphoto">사진 등록</p></div>
-                    <div class="select">
-                        <div class="select1"><p>냉장</p></div>
-                        <div class="select2"><p>냉동</p></div>
-                    </div>
-                    <div class="input">
-                        <div class="name"><input type="text" placeholder="냉장고 이름을 입력하세요" /></div>
-                        <div class="memo"><input type="text" placeholder="메모를 입력하세요" /></div>
-                        <div class="save">
-                            <a href="./index3.html"><button type="button">추가</button></a>
+                <section class="box">
+                    <p>장보기 목록을 추가하세요!</p>
+                    <section class="input">
+                        <div class="name">
+                            <input class="name" placeholder="살 것" />
                         </div>
-                    </div>
+                        <div class="amount">
+                            <button>&plus;</button>
+                            <input class="amount" placeholder="수량" />
+                            <button>&minus;</button>
+                        </div>
+                    </section>
+                    <button class="addmemo">추가</button>
+                    <!-- 장바구니 리스트 -->
+                    <section class="list">
+                        <ul></ul>
+                    </section>
                 </section>
             </div>
+
             <div class="control">
                 <ul>
                     <li>

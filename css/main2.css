@@ -12,7 +12,7 @@ html {
   height: 100vh;
 }
 body {
-  height: 100%;
+  height: 95%;
 }
 
 li {
@@ -64,11 +64,10 @@ div.body section h1 {
 }
 
 section div.photo {
-  border: 1px solid black;
   background-color: #e7e5e5;
-  border-radius: 10px;
+  border-radius: 15px;
   height: 300px;
-  width: 95%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -76,34 +75,43 @@ section div.photo {
   color: #4e4e4e;
 }
 
-section p {
+section p.inputphoto {
   font-size: 1rem;
   color: #858585;
   padding: 12px;
   border: 2px solid #858585;
-  border-radius: 10px;
+  border-radius: 15px;
   cursor: pointer;
 }
 
 section p:hover {
   background-color: #f4f4f4;
+  border-radius: 15px;
 }
-div.input {
-  width: 100%;
+section div.select {
+  background-color: #e7e5e5;
+  width: 80%;
   display: flex;
-  flex-direction: column;
-  text-align: right;
-  margin: auto;
+  justify-content: space-evenly;
+  margin: 10px auto;
+  border-radius: 15px;
 }
-
+section div.select p {
+  font-size: 1.1rem;
+  padding: 10px 2rem;
+  margin: 5px;
+  color: #858585;
+  cursor: pointer;
+}
 section input {
+  display: block;
+  width: 80%;
   border: none;
   font-size: 1.1rem;
   background-color: #e7e5e5;
   border-radius: 10px;
-  width: 80%;
   padding: 15px;
-  margin: 15px;
+  margin: 15px auto;
 }
 
 input:focus {
@@ -116,6 +124,8 @@ input:hover {
 }
 
 section button {
+  display: block;
+  width: 15%;
   font-size: 12px;
   text-decoration: none;
   color: #4e4e4e;
@@ -123,7 +133,7 @@ section button {
   border: 2px solid;
   border-radius: 10px;
   padding: 1em 2em;
-  margin: 1rem;
+  margin: auto;
   box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
 }
 
@@ -148,6 +158,7 @@ div.control ul {
   height: 100%;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
 }
 
 div li.home {
