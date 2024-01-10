@@ -37,6 +37,7 @@ div.main header i {
 }
 div.main header i:hover {
   color: #858585;
+  cursor: pointer;
 }
 
 div.body {
