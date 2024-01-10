@@ -30,17 +30,7 @@ div.main {
 
 div.main header {
   display: flex;
-}
-
-div.main header p {
-  /* border: 1px solid black; */
-
-  flex: 1;
-  text-align: center;
-  color: #4e4e4e;
-  margin-top: 20px;
-  margin-left: 40px;
-  font-size: 1.2rem;
+  justify-content: end;
 }
 
 div.main header i {
@@ -74,6 +64,12 @@ div.body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+div.main section.div p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 10px;
 }
 div.main section.div {
   width: 90%;

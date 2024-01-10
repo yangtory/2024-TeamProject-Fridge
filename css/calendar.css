@@ -8,9 +8,8 @@ html {
 }
 body {
   height: 100%;
-  display: flex;
-  flex-direction: column;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -44,14 +43,23 @@ div.main header i {
 div.main header i:hover {
   color: #858585;
 }
+div.body {
+  height: 90%;
+  color: #4e4e4e;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
 section {
-  flex: 1;
-  flex-wrap: wrap;
+  /* flex: 1; */
+  /* width: 90%; */
+  height: 90%;
+  /* flex-wrap: wrap; */
 }
 
 body > div > div {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .month {
@@ -110,7 +118,7 @@ body > div > div {
   border-left: 1px solid #f4f4f4;
 }
 .days_div {
-  flex: 1;
+  /* flex: 1; */
   margin-top: 2rem;
   display: flex;
 }
@@ -151,8 +159,8 @@ div.control ul {
 }
 
 div li.home {
-  font-size: 65px;
-  margin-bottom: 3.5rem;
+  font-size: 55px;
+  margin-bottom: 4rem;
   color: #a7cba2;
 }
 
