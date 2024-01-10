@@ -140,16 +140,6 @@ div.control {
   font-size: 30px;
   background-color: #f4f4f4;
   border-radius: 10px;
-}
-
-div.control li:hover {
-  cursor: pointer;
-  color: #858585;
-}
-div.control {
-  font-size: 30px;
-  background-color: #f4f4f4;
-  border-radius: 10px;
   height: 10%;
 }
 
@@ -161,7 +151,16 @@ div.control ul {
 }
 
 div li.home {
-  font-size: 55px;
-  margin-bottom: 4rem;
+  font-size: 65px;
+  margin-bottom: 3.5rem;
   color: #a7cba2;
+}
+
+div li {
+  font-size: 1.5rem;
+  color: #4e4e4e;
+}
+
+div li:hover {
+  color: #858585;
 }
