@@ -1,63 +1,59 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/670098288e.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main6.css" />
+    <script src="./js/index6.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://kit.fontawesome.com/670098288e.js" crossorigin="anonymous"></script>
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/main6.css" />
-  <script src="./js/index6.js"></script>
-</head>
+  <body>
+    <div class="main">
+      <header class="setting">
+        <a href="./index5.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <a href="./setting/setting.html"><i class="fa-solid fa-gear"></i></a>
+      </header>
+      <div class="body">
+        <section class="h1">
+          <h1>물건 추가</h1>
+          <div class="list">
+            <label>물건 종류</label>
+            <div class="btn-group">
+              <button class="button">냉장</button>
+              <button class="button">냉동</button>
+              <button class="button">실외</button>
+            </div>
+            <!-- end btn-group -->
 
-<body>
-  <div class="main">
-    <header class="setting">
-      <a href="./index5.html"><i class="fa-solid fa-arrow-left"></i></a>
-      <a href="./setting/setting.html"><i class="fa-solid fa-gear"></i></a>
-    </header>
-    <div class="body">
-      <section class="h1">
-        <h1>물건 추가</h1>
-        <div class="list">
-          <label>물건 종류</label>
-          <div class="btn-group">
-            <button class="button">냉장</button>
-            <button class="button">냉동</button>
-            <button class="button">실외</button>
+            <div class="list2">
+              <label>이름</label>
+              <input name="name" placeholder="물건의 이름" />
+              <label>수량</label>
+              <input name="count" placeholder="수량" />
+              <label>유통 기한</label>
+              <input name="date" placeholder="유통기한" />
+            </div>
+            <!-- end list2 -->
           </div>
-          <!-- end btn-group -->
-
-          <div class="list2">
-            <label>이름</label>
-            <input placeholder="물건의 이름">
-            <label>수량</label>
-            <input placeholder="수량">
-            <label>유통 기한</label>
-            <input placeholder="유통기한">
-          </div>
-          <!-- end list2 -->
-        </div>
-        <!-- end list -->
-        <button class="save">추가</button>
-
-
-      </section>
+          <!-- end list -->
+          <button class="save">추가</button>
+        </section>
+      </div>
+      <div class="control">
+        <ul>
+          <li>
+            <a href="./calendar.html"><i class="fa-solid fa-calendar-days"></i></a>
+          </li>
+          <li class="add">
+            <a href="./index1.html"><i class="fa-solid fa-circle-plus"></i></a>
+          </li>
+          <li>
+            <a href="./alarm.html"><i class="fa-solid fa-bell"></i></a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="control">
-      <ul>
-        <li>
-          <a href="./calendar.html"><i class="fa-solid fa-calendar-days"></i></a>
-        </li>
-        <li class="add">
-          <a href="./index1.html"><i class="fa-solid fa-circle-plus"></i></a>
-        </li>
-        <li>
-          <a href="./alarm.html"><i class="fa-solid fa-bell"></i></a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
