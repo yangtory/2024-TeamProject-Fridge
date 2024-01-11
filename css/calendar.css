@@ -3,16 +3,18 @@
   margin: 0;
   padding: 0;
 }
-a {
-  text-decoration: none;
-  color: inherit;
-  white-space: nowrap;
-}
 html {
   height: 100vh;
 }
 body {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  white-space: nowrap;
 }
 html {
   height: 100vh;
@@ -43,31 +45,109 @@ div.main header i {
 }
 div.main header i:hover {
   color: #858585;
-  cursor: pointer;
+}
+section {
+  flex: 1;
+  flex-wrap: wrap;
 }
 
-div.body {
-  height: 90%;
-  color: #4e4e4e;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-div.body section {
-  width: 90%;
-  height: 90%;
-  background-color: #a7cba2;
-  border-radius: 15px;
+body > div > div {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-label {
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #a7cba2;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
   cursor: pointer;
 }
+.month .prev:hover {
+  color: #858585;
+}
+.month .next {
+  float: right;
+  padding-top: 10px;
+  cursor: pointer;
+}
+.month .next:hover {
+  color: #858585;
+}
 
+.weekdays {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 14px 0;
+  background-color: #ddd;
+  flex-wrap: wrap;
+}
+
+.weekdays li {
+  flex: 1;
+  flex-shrink: 2;
+  color: #4e4e4e;
+  text-align: center;
+  border-left: 1px solid #f4f4f4;
+}
+.days_div {
+  flex: 1;
+  margin-top: 2rem;
+  display: flex;
+}
+
+.days {
+  padding: 10px 0;
+  background: #ddd;
+  margin: 0;
+  color: #777;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+.days li {
+  display: block;
+  list-style-type: none;
+  width: 14.2%;
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 12px;
+  color: #777;
+  border-left: 1px solid #f4f4f4;
+}
+
+div.control {
+  font-size: 30px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+}
+
+div.control li:hover {
+  cursor: pointer;
+  color: #858585;
+}
 div.control {
   font-size: 30px;
   background-color: #f4f4f4;
@@ -87,94 +167,4 @@ div li.home {
   font-size: 55px;
   margin-bottom: 4rem;
   color: #a7cba2;
-}
-
-div li {
-  font-size: 1.5rem;
-  color: #4e4e4e;
-}
-
-div li:hover {
-  color: #858585;
-  cursor: pointer;
-}
-/*
-여기부터 calendar 부분
-*/
-
-section.menu {
-  display: flex;
-  flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
-}
-div.month {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 3rem;
-  width: 100%;
-  background: #a7cba2;
-  text-align: center;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-div.month div {
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-div.prev,
-div.next {
-  cursor: pointer;
-  padding: 2rem;
-}
-div.prev:hover,
-div.next:hover {
-  color: #858585;
-}
-div.date {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin-top: 2rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
-div.weekdays {
-  display: flex;
-  flex: 1;
-  text-align: center;
-  background-color: #ddd;
-  justify-content: center;
-}
-div.weekdays > div {
-  color: #4e4e4e;
-  border-left: 1px solid #f4f4f4;
-  padding: 20px;
-  width: 14.2%;
-}
-
-div.days {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
-  background: #f4f4f4;
-  color: #777;
-}
-div.day {
-  width: 14.2%;
-  border-left: 1px solid #a7cba2;
-  border-bottom: 1px solid #a7cba2;
-  padding: 2rem;
-  color: #777;
-}
-div.day:hover {
-  cursor: pointer;
-  background-color: #4e4e4e;
-  color: white;
 }
