@@ -49,5 +49,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     alert("추가가 완료됐습니다.");
+    location.href = "./index7.html";
   });
 });
