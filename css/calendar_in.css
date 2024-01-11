@@ -27,7 +27,7 @@ div.main {
 
 div.main header {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 }
 
 div.main header i {
@@ -95,11 +95,11 @@ section.menu {
   display: flex;
   flex-direction: column;
   /* align-items: center;
-    justify-content: center; */
+      justify-content: center; */
 }
 /*
-  여기부터 calendar 부분
-  */
+    여기부터 calendar 부분
+    */
 div.month {
   display: flex;
   justify-content: space-between;
@@ -176,8 +176,8 @@ div.day:hover {
 }
 
 /*
-calendar_in css
-*/
+  calendar_in css
+  */
 
 div.container {
   margin-top: 1rem;
@@ -221,19 +221,39 @@ div.list_container legend {
 div.list {
   margin: 20px;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
-div.list div {
+
+div.list > div {
   margin-top: 1rem;
-  border-left: 3px solid #a7cba2;
   padding: 1rem;
   font-size: 16px;
   font-weight: bold;
   color: #4e4e4e;
   border-left: 2px solid #a7cba2;
+  display: flex;
+  justify-content: space-around;
 }
 
-div.list div:hover {
+div.list > div:hover {
   color: black;
   cursor: pointer;
   border-left: 2px solid #4e4e4e;
+}
+
+div.list span.quantity {
+  padding: 0 1rem;
+  flex: 1;
+  text-align: center;
+}
+
+div.list div:hover span.quantity {
+  background-color: #a7cba2;
+  border-radius: 20px;
+  opacity: 0.5;
+}
+
+div.list > div div {
+  flex: 2;
 }
