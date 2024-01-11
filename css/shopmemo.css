@@ -49,6 +49,19 @@ div.body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /* white-space: nowrap;
+  text-align: center;
+  justify-content: center;
+
+  background-color: #f4f4f4;
+  border-radius: 15px;
+  margin: 5px 15px;
+  margin-bottom: 30px;
+  padding: 10px;
+
+  font-size: 20px;
+  border: 1px solid black; */
 }
 
 section.box {
@@ -66,6 +79,7 @@ div.body p {
 }
 div.body .input {
   display: flex;
+  justify-content: center;
 }
 
 div.body div {
@@ -73,11 +87,20 @@ div.body div {
   margin: 10px;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  /* visibility: hidden; */
+  margin: 0;
+}
+
 div.body section div.name {
-  width: 70%;
+  width: 50%;
 }
 div.body section div.amount {
   width: 20%;
+  display: inline-block;
+  white-space: nowrap;
 }
 
 div.body section div.amount button {

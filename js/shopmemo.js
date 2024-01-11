@@ -30,35 +30,45 @@ document.addEventListener("DOMContentLoaded", () => {
     ulContent.innerHTML = "";
     todoList.forEach((item) => createLiTag(item));
   };
-  createTodoList();
-  /*
-      화면상에 li tag 가 여러개 있는데 querySelector 을 사용하여 요청하면 화마ㅕㄴ에서 최초로 발견되는 요소만 select 된다.
-  */
-  const liContent = document.querySelector("section.list li");
-  ulContent.addEventListener("click", (event) => {
-    /*ul tag 에  event 를 설정하고, 실제로는 li tag 에 대하여 event 코드를 처리할 것이다. 
-      이때 실제 제일먼저 클릭된 요소는 event.target 이된다. 근데 이 화면에서 실제 이벤트 타겟은 span tag 가된다.
-      그러면 스팬이 아닌 li태그에 대하여 어떤 처리를 하려고 한다.*/
-    const target = event.target;
-    if (target.tagName === "SPAN") {
-      //스팬 태그에 클로즈 클래스가 부착된 친구인가?
-      if (target.className === "close") {
-        //삭제할지 물어보기
-        if (confirm("목록을 삭제할까요?")) {
-          //삭제를 허락하면 현재 스팬의 부모인 li 태그를 감추기
-          target.closest("LI").style.display = "none";
-        }
-        return false;
-      }
+  // createTodoList();
 
-      const liTag = target.closest("LI");
-      liTag?.classList.toggle("complete");
-    } //end if
-  }); //ul click event end
+  const amountInput = document.querySelector("input.amount");
+  const plusButton = document.querySelector("button.plus");
+  plusButton.addEventListener("click", function () {
+    // 현재 값 가져오기
+    let currentValue = parseInt(amountInput.value, 10);
 
+    // 값 증가
+    currentValue++;
+
+    // 변경된 값을 다시 설정
+    amountInput.value = currentValue;
+  });
+
+  const minusButton = document.querySelector("button.minus");
+  minusButton.addEventListener("click", function () {
+    // 현재 값 가져오기
+    let currentValue = parseInt(amountInput.value, 10);
+
+    // 값 증가
+    currentValue--;
+
+    if (currentValue < 1) {
+      // alert("해당 값보다 더 적어질 수 없습니다");
+      // amountInput.select();
+      return false;
+    }
+    // 변경된 값을 다시 설정
+    amountInput.value = currentValue;
+  });
+
+  // const name = todoinput.value;
+  // const amount = todoinput2.value;
   const adBtn = document.querySelector("button.addmemo");
   adBtn.addEventListener("click", () => {
-    const todo = todoinput.value + todoinput2.value + "개";
+    // const todo = `${name}+${amount + 1}` + "개";
+    const todo1 = todoinput.value;
+    let todo2 = todoinput2.value;
     if (!todoinput.value) {
       alert("살 것을 입력해주세요");
       todoinput.select();
@@ -69,12 +79,27 @@ document.addEventListener("DOMContentLoaded", () => {
       todoinput2.select();
       return false;
     }
+
     //list(배열)의 끝에 새로운 값을 추가하기
-    todoList.push(todo);
-    createTodoList(todo);
+    todoList.push(todo1 + ` - ` + `${todo2}` + `개`);
+    createTodoList();
     todoinput.value = "";
     todoinput2.value = "";
   }); //end addBtnclick
 
-  const closeBtn = document.querySelector("");
+  ulContent.addEventListener("click", (event) => {
+    const target = event.target;
+    if (target.tagName === "SPAN") {
+      if (target.className === "close") {
+        //삭제할지 물어보기
+        if (confirm("목록을 삭제할까요?")) {
+          target.closest("LI").remove();
+        }
+        return false;
+      }
+
+      const liTag = target.closest("LI");
+      liTag?.classList.toggle("complete");
+    } //end if
+  }); //ul click event end
 });
