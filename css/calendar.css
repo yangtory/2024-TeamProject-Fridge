@@ -77,8 +77,8 @@ div.control ul {
 }
 
 div li.home {
-  font-size: 55px;
-  margin-bottom: 4rem;
+  font-size: 65px;
+  margin-bottom: 3.5rem;
   color: #a7cba2;
 }
 
@@ -130,7 +130,6 @@ div.date {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 2rem;
 }
 div.weekdays {
   display: flex;
@@ -138,26 +137,40 @@ div.weekdays {
   text-align: center;
   background-color: #ddd;
   justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 div.weekdays > div {
   color: #4e4e4e;
   border-left: 1px solid #f4f4f4;
+  margin: 20px auto;
 
   width: 14.2%;
 }
 
 div.days {
+  margin-top: 30px;
   display: flex;
   width: 100%;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
-  background: #ddd;
+  background: #f4f4f4;
   color: #777;
 }
 div.day {
+  margin: 20px auto;
   width: 14.2%;
-  border-left: 1px solid #f4f4f4;
-  margin: 2rem 0;
+  border-left: 1px solid #a7cba2;
+  padding: 0.6rem 0;
   color: #777;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  transition: background-color 2s;
+}
+div.day:hover {
+  color: #a7cba2;
+  cursor: pointer;
 }
