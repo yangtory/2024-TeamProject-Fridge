@@ -13,6 +13,7 @@ a {
 html {
   height: 100vh;
 }
+
 body {
   height: 95%;
 }
@@ -22,9 +23,9 @@ li {
 }
 
 div.main {
-  height: 100%;
   background-color: #e7e5e5;
   border-radius: 15px;
+  height: 100%;
 }
 
 div.main header {
@@ -43,12 +44,60 @@ div.main header i:hover {
   color: #858585;
 }
 
+div.main section li {
+  color: white;
+  padding: 30px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  /* position: relative; */
+  /* top: 50px; */
+  margin-top: 20px;
+  cursor: pointer;
+  display: flex;
+}
+span.date {
+  flex: 1;
+}
 div.body {
   height: 90%;
   color: #4e4e4e;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+div.main section.div p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 10px;
+}
+div.main section.div {
+  width: 90%;
+  margin: 40px auto;
+  height: 90%;
+  background-color: #a7cba2;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.main section li:hover {
+  color: #4e4e4e;
+  background-color: #b6b3b3;
+  transition: 0.8s;
+}
+div.main div.line li {
+  flex: 1;
+  padding: 15px;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+div.main span.close {
+  color: red;
+}
+div.main span.close:hover {
+  color: white;
 }
 
 div.control {
@@ -59,13 +108,13 @@ div.control {
 }
 
 div.control ul {
-  display: flex;
   height: 100%;
+  display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-div li.add {
+div li.home {
   font-size: 65px;
   margin-bottom: 3.5rem;
   color: #a7cba2;
