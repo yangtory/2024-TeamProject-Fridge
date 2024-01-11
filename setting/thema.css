@@ -1,0 +1,44 @@
+:root[color-theme="light"] {
+  --background1: #e7e5e5;
+  --background2: #f4f4f4;
+  --background3: #a7cda2;
+  --boxColor: #4e4e4e;
+  --boxColor2: #4e4e4e;
+}
+
+:root[color-theme="dark"] {
+  --background1: #232222;
+  --background2: #353434;
+  --background3: #97b992;
+  --boxColor: #9d9f9d;
+  --boxColor2: #656464;
+}
+
+div.main {
+  background: var(--background1);
+}
+
+li {
+  color: var(--boxColor);
+  border-bottom: var(--boxColor);
+}
+section,
+div.control {
+  background: var(--background2);
+}
+
+div li.add {
+  color: var(--background3);
+}
+
+div.body li {
+  border-bottom: 1px solid var(--boxColor2);
+}
+
+.themed {
+  display: block;
+  width: 10em;
+  height: 10em;
+  background: var(--boxColor);
+  color: var(--background);
+}
