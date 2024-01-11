@@ -12,7 +12,7 @@ html {
   height: 100vh;
 }
 body {
-  height: 100%;
+  height: 95%;
 }
 
 li {
@@ -37,6 +37,7 @@ div.main header i {
 }
 div.main header i:hover {
   color: #858585;
+  cursor: pointer;
 }
 
 div.body {
@@ -95,6 +96,7 @@ div.control ul {
   height: 100%;
   justify-content: space-around;
   align-items: center;
+  cursor: pointer;
 }
 
 div li.home {
