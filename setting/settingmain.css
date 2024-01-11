@@ -28,7 +28,7 @@ div.main {
 
 div.main header {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 }
 
 div.main header i {

@@ -49,19 +49,6 @@ div.body {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* white-space: nowrap;
-  text-align: center;
-  justify-content: center;
-
-  background-color: #f4f4f4;
-  border-radius: 15px;
-  margin: 5px 15px;
-  margin-bottom: 30px;
-  padding: 10px;
-
-  font-size: 20px;
-  border: 1px solid black; */
 }
 
 section.box {
