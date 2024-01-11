@@ -3,19 +3,16 @@
   margin: 0;
   padding: 0;
 }
-
 a {
   text-decoration: none;
   color: inherit;
   white-space: nowrap;
 }
-
 html {
   height: 100vh;
 }
-
 body {
-  height: 95%;
+  height: 100%;
 }
 
 li {
@@ -23,82 +20,71 @@ li {
 }
 
 div.main {
+  height: 100%;
   background-color: #e7e5e5;
   border-radius: 15px;
-  height: 100%;
 }
 
 div.main header {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
 }
 
 div.main header i {
   font-size: 1.2rem;
   margin: 10px 15px;
   color: #4e4e4e;
-  cursor: pointer;
 }
-
 div.main header i:hover {
   color: #858585;
-}
-
-div.main section li {
-  color: white;
-  padding: 30px;
-
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  /* position: relative; */
-  /* top: 50px; */
-  margin-top: 20px;
   cursor: pointer;
-  display: flex;
 }
-span.date {
-  flex: 1;
-}
+
 div.body {
   height: 90%;
   color: #4e4e4e;
   display: flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
 }
 
-div.main section.div p {
-  text-align: center;
-  font-size: 1.6rem;
-  margin: 10px;
-}
-div.main section.div {
+div.body section {
   width: 90%;
-  margin: 40px auto;
   height: 90%;
   background-color: #a7cba2;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-div.main section li:hover {
-  color: #4e4e4e;
-  background-color: #b6b3b3;
-  transition: 0.8s;
-}
-div.main div.line li {
-  flex: 1;
-  padding: 15px;
-  font-size: 2.2rem;
+div.body section h1 {
+  font-size: 2rem;
+  margin: 15px;
   text-align: center;
 }
 
-div.main span.close {
-  color: red;
+section button {
+  width: 40%;
+  font-size: 25px;
+  text-decoration: none;
+  color: #4e4e4e;
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 10px;
+  padding: 1em 2em;
+  margin: 1rem;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
 }
-div.main span.close:hover {
-  color: white;
+
+button:hover {
+  background-color: #fff;
+}
+
+button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(1px, 1px);
 }
 
 div.control {
@@ -109,15 +95,15 @@ div.control {
 }
 
 div.control ul {
-  height: 100%;
   display: flex;
+  height: 100%;
   justify-content: space-around;
   align-items: center;
 }
 
-div li.home {
-  font-size: 65px;
-  margin-bottom: 3.5rem;
+div li.add {
+  font-size: 55px;
+  margin-bottom: 4rem;
   color: #a7cba2;
 }
 
@@ -128,4 +114,14 @@ div li {
 
 div li:hover {
   color: #858585;
+}
+
+section ul li {
+  color: #4e4e4e;
+  font-size: 8rem;
+  margin: 20px 40px;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
