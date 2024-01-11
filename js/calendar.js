@@ -1,12 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
   let month_num = 0;
-
+  const days_click = document.querySelector("div.days");
   const date = new Date();
   document.getElementById("year").innerHTML = date.toDateString().substring(10);
   document.getElementById("month").innerHTML = date.toDateString().substring(4, 7);
-
   const month = document.querySelector("div.month");
-
+  days_click.addEventListener("click", (event) => {
+    const target_name = event.target.tagName;
+    const target_class = event.target.className;
+    if (target_name === "DIV") {
+      if (target_class === "day") {
+        document.location.href = "./calendar_in.html";
+      }
+    }
+  });
   month.addEventListener("click", (event) => {
     const tag_class = event.target.className;
 
