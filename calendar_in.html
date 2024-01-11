@@ -2,17 +2,27 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://kit.fontawesome.com/670098288e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/calendar.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <script
+      src="https://kit.fontawesome.com/670098288e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/calendar_in.css" />
     <script src="./js/claendar2.js"></script>
-    <title>Document</title>
+    <title>캘린더 In</title>
   </head>
   <body>
     <div class="main">
       <header class="setting">
-        <a href="./calendar.html"><i class="fa-solid fa-arrow-left"></i></a>
-        <a href="./setting/setting.html"><i class="fa-solid fa-gear"></i></a>
+        <a href="calendar.html"
+          ><i class="fa-solid fa-arrow-left"></i
+        ></a>
+        <a href="./setting/setting.html"
+          ><i class="fa-solid fa-gear" id="gear"></i
+        ></a>
       </header>
       <div class="body">
         <section class="day_select">
@@ -25,11 +35,22 @@
               <fieldset>
                 <legend>오늘의 구매물품</legend>
                 <div class="list">
-                  <div>고구마</div>
-                  <div>당근</div>
-                  <div>감자</div>
-                  <div>계란</div>
-                </div>
+                  <div>
+                    <div>고구마</div>
+                    <span class="quantity">1개</span>
+                  </div>
+                  <div>
+                    <div>당근</div>
+                    <span class="quantity">1개</span>
+                  </div>
+                  <div>
+                    <div>감자</div>
+                    <span class="quantity">5개</span>
+                  </div>
+                  <div>
+                    <div>계란</div>
+                    <span class="quantity">1판</span>
+                  </div>
               </fieldset>
             </form>
 
@@ -37,9 +58,14 @@
               <fieldset>
                 <legend>유통기한 경과</legend>
                 <div class="list">
-                  <div>계란</div>
-                  <div>사과</div>
-                </div>
+                  <div>
+                    <div>계란</div>
+                    <span class="quantity">1판</span>
+                  </div>
+                  <div>
+                    <div>사과</div>
+                    <span class="quantity">2개</span>
+                  </div>
               </fieldset>
             </form>
           </div>
@@ -48,13 +74,19 @@
       <div class="control">
         <ul>
           <li>
-            <a href="./calendar.html"><i class="fa-solid fa-calendar-days"></i></a>
+            <a href="./calendar.html"
+              ><i class="fa-solid fa-calendar-days"></i
+            ></a>
           </li>
           <li class="home">
-            <a href="./index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="./index.html"
+              ><i class="fa-solid fa-house"></i
+            ></a>
           </li>
           <li>
-            <a href="./alarm.html"><i class="fa-solid fa-bell"></i></a>
+            <a href="./alarm.html"
+              ><i class="fa-solid fa-bell"></i
+            ></a>
           </li>
         </ul>
       </div>
