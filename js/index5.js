@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 버튼을 클릭했을 때 배경색이 바뀌는 함수를 정의
   function changeBackgroundColor(event) {
     // 선택된 버튼의 배경색을 변경
-    event.target.style.backgroundColor = "#858585";
+    event.target.style.backgroundColor = "#aaa";
 
     // 다른 버튼들의 배경색을 초기화
     if (event.target !== refrigerationButton) {
