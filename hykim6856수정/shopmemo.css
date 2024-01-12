@@ -73,6 +73,8 @@ section.box {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+
+  /* border: 1px solid red; */
 }
 div.body p {
   margin: 10px;
@@ -92,10 +94,6 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   /* visibility: hidden; */
   margin: 0;
-}
-
-section.list {
-  overflow: auto; /*이부분 업데이트됨 1.12 9:41*/
 }
 
 div.body section div.name {
@@ -131,6 +129,7 @@ div.body input.amount {
   width: 50%;
 }
 
+section.stiky button,
 button.addmemo {
   font-size: 15px;
   border: none;
@@ -140,9 +139,26 @@ button.addmemo {
   color: #f4f4f4;
 }
 
+section.stiky {
+  margin-top: auto;
+  bottom: 0;
+  padding: 10px;
+  /* border: 1px solid red; */
+}
+
+section.stiky button {
+  margin: 10px;
+}
+
+section.stiky button.delete:hover {
+  background-color: red;
+}
+
 button {
   cursor: pointer;
 }
+
+section.stiky button:hover,
 button:hover {
   background-color: #858585;
 }
@@ -150,30 +166,34 @@ button:hover {
 section.list {
   width: 80%;
   /* flex: 1; */
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 15px;
   margin-top: 20px;
+  background-color: #ffffff22;
+  overflow: auto; /*이부분 업데이트됨 1.12 9:41*/
+  /* border: 1px solid red; */
 }
+
 section.list ul {
   list-style: none;
 }
 section.list li {
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  border-bottom: 1px solid #85858545;
 
   /* 브라우저 호환성을 위한 설정 */
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  padding: 0.9rem;
+  padding: 0.4rem;
 
-  transition: 1.3s;
+  transition: 1s;
 
   display: flex;
 }
 
 section.list li:hover {
-  background-color: #ddd;
+  background-color: #dddddd50;
   border-radius: 15px;
 }
 
