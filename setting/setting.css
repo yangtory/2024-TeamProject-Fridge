@@ -1,6 +1,11 @@
 div.main header {
   display: flex;
-  justify-content: end;
+  justify-content: right;
+}
+
+.fa-arrow-left {
+  position: absolute;
+  left: 0;
 }
 
 section {
