@@ -7,8 +7,6 @@ html(lang="ko")
     title= title
     link(rel='stylesheet', href='/css/main.css')
     link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.15.2/css/all.css", integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu", crossorigin="anonymous")
-    //- link(rel="stylesheet", href="https://kit.fontawesome.com/670098288e.js", integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu", crossorigin="anonymous")
-    
     script(src="/js/main.js")
 
   body
@@ -18,16 +16,16 @@ html(lang="ko")
           i.fa.fa-cog
       div.body 
         p 냉장고를 추가하세요 !
+            
       div.control
         ul 
           li
             a(href='#')
               i.fa.fa-calendar.check
           li.add
-            a(href='#')
+            a(href='/menu')
               i.fa.fa-plus-circle
           li
             a(href='#')
               i.fa.fa-bell    
-            
     block content
