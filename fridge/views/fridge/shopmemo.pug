@@ -1,0 +1,31 @@
+extends ../layout
+
+
+block content
+    link(rel="stylesheet", href="/css/shopmemo.css")
+    script(src="/js/shopmemo.js")
+    //- div.main
+        //- header.setting 
+        //-     a(href="(나중에 수정예정)(왼쪽화살표 눌렀을때 들어가지는 주소)") 
+        //-         i.fa-solid.fa-arrow-left
+        //-     a(href="(톱니바퀴 눌렀을때 들어가지는 주소)") 
+        //-         i.fa-solid.fa-gear
+    div.body
+        section.box 
+            p 장보기 목록을 추가하세요!
+            section.input 
+                div.name
+                    input.name(placeholder="살것")
+                div.amount
+                    button.plus +
+                    input.amount(type="number", min="1", placeholder="수량")
+                    button.minus -
+            button.addmemo 추가
+            //- 장바구니 리스트
+            section.list 
+                ul 
+            section.stiky 
+                button.delete 전체삭제
+                button.save 저장
+       
+
