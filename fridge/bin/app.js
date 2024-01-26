@@ -20,6 +20,7 @@ import logger from "morgan";
 import indexRouter from "../routes/index.js";
 import usersRouter from "../routes/users.js";
 import fridgeRouter from "../routes/fridge.js";
+import calendarRouter from "../routes/calendar.js";
 
 // create express framework
 const app = express();
@@ -45,6 +46,7 @@ app.use(express.static(path.join("public")));
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
 app.use("/menu", fridgeRouter);
+app.use("/calendar", calendarRouter);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
